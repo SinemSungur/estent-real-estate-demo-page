@@ -1,29 +1,23 @@
 {
   "name": "estent-real-estate-demo-page",
   "version": "1.0.0",
-  "description": "A real estate demo page what brand name is Estent developed with CSS3,  HTML5, grid technologies, Font Awesome 5.12.0, Google Fonts, animations, responsive integration technologies",
+  "description": "A real estate demo page what brand name is Estent. In progress.",
   "scripts": {
     "start": "lite-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SinemSungur/estent-real-estate-demo-page"
+    "url": "git+https://github.com/SinemSungur/estent-real-estate-demo-page.git"
   },
-  "keywords": [
-    "css3",
-    "html5",
-    "grid",
-    "responsive-web-design",
-    "bootstrap",
-    "media-queries"
-  ],
+  "keywords": [],
   "author": "Sinem Sungur",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SinemSungur/estent-real-estate-demo-page"
+    "url": "https://github.com/SinemSungur/estent-real-estate-demo-page/issues"
   },
-  "homepage": "https://github.com/SinemSungur/estent-real-estate-demo-page#readme",
-  "dependencies": {
-    "lite-server": "^2.5.4"
+  "homepage": "",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3"
   }
 }
