@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A real estate demo page what brand name is Estent. In progress.",
   "scripts": {
-    "start": "lite-server"
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
