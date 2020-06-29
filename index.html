@@ -5,75 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Estent Real Estate Demo Page</title>
   </head>
   <body>
-    <!--TOP BAR-->
-    <div class="top-bar">
-      <div class="container row">
-        <div class="col-12">
-          <ul class="top-container">
-            <li class="top-container-item">
-              <a href="#">ALL CITIES <i class="fas fa-chevron-down"></i> </a>
+    <header>
+      <!--TOP BAR-->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-sm-12 col-md-3 p-lg-0 text-lg-left top-bar-dropdown-menu"
+            >
+              <a href="#">All Cities<i class="fas fa-chevron-down ml-2"></i></a>
               <ul class="top-item-submenu">
-                <li class="top-item-submenu-item">NEW YORK</li>
-                <li class="top-item-submenu-item">LOS ANGELES</li>
-                <li class="top-item-submenu-item">CALIFORNIA</li>
-                <li class="top-item-submenu-item">MIAMI</li>
-                <li class="top-item-submenu-item">LAS VEGAS</li>
+                <li>NEW YORK</li>
+                <li>LOS ANGELES</li>
+                <li>CALIFORNIA</li>
+                <li>MIAMI</li>
+                <li>LAS VEGAS</li>
               </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12">
-          <ul class="top-container">
-            <li class="top-container-item">
-              <a href="tel:+1800-123-7890"
-                ><i class="fas fa-phone-alt"></i>+1800-123-7890</a
-              >
-            </li>
-            <li class="top-container-item">
-              <a href="#"><i class="fas fa-download"></i> DOWNLOAD APP</a>
-            </li>
+            </div>
+            <div class="col-sm-12 col-md-9 p-lg-0 text-lg-right">
+              <ul class="top-link-container">
+                <li class="top-link-item d-md-none d-lg-block">
+                  <a href="tel:+1800-123-7890"
+                    ><i class="fas fa-phone-alt mr-1"></i>+1800-123-7890</a
+                  >
+                </li>
+                <li class="top-link-item">
+                  <a href="#"
+                    ><i class="fas fa-download mr-1"></i> Download App</a
+                  >
+                </li>
 
-            <li class="top-container-item">
-              <a href="#">SELL/RENT YOUR PROPERTY</a>
-              <p>
-                Genuine Clients, 100% Trust Assurance and Lowest Fees on the
-                Market.
-                <a href="#"> Learn More <i class="fas fa-arrow-right"></i> </a>
-              </p>
-            </li>
-            <li class="top-container-item">LOGIN/REGISTER</li>
-          </ul>
+                <li class="top-link-item">
+                  <div class="top-bar-dropdown2">
+                    <a href="#"
+                      >Sell/Rent Your Property<i
+                        class="fas fa-chevron-down ml-2"
+                      ></i
+                    ></a>
+                  
+                  <p class="dropdown-paragh">
+                    Genuine Clients, 100% Trust Assurance and Lowest Fees on the
+                    Market.
+                    <a href="#"
+                      ><i>Learn More</i> <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </p>
+                </div>
+                </li>
+
+                <li class="top-link-item"><a href="#">Login/Register</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!--NAVIGATION-->
-    <nav>
-      <div class="container">
-        <div class="nav-logo">
+      <!--NAVIGATION-->
+      <nav class="navbar navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            >estent <img src="images/icon-logo-house.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-content-lg">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="navlink" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink dropdown-content" href="#"
+                  >PROPERTIES<i class="fa fa-angle-right"></i
+                ></a>
+                <div class="nav-container-sublist">
+                  <ul>
+                    <li class="nav-container-list">CONDO APARTMENTS</li>
+                    <li class="nav-container-list">LUXURY VILLAS</li>
+                    <li class="nav-container-list">PREMIUM ESTATES</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">BUILDERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">LISTING</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="navitem">
+                <a class="navlink" href="index.html">HOME</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">ABOUT US</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#"
+                  >PROPERTIES<i class="fa fa-angle-right"></i
+                ></a>
+                <div class="nav-container-sublist">
+                  <ul>
+                    <li class="nav-container-list">CONDO APARTMENTS</li>
+                    <li class="nav-container-list">LUXURY VILLAS</li>
+                    <li class="nav-container-list">PREMIUM ESTATES</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">BUILDERS</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">SERVICES</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">LISTING</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--      <div class="nav-logo">
           <a href="index.html">
             <img src="images/icon-logo-house.svg" class="icon-logo" alt="" />
             <p>estent</p>
           </a>
         </div>
-        <div class="nav-bar-menu">
+        <div class="nav-bar-icons">
           <i class="fas fa-bars"></i>
           <i class="fas fa-times"></i>
-          <ul class="nav-container">
-            <a href="index.html"><li class="nav-container-list">HOME</li></a>
-            <a href="#"><li class="nav-container-list">ABOUT US</li></a>
-            <a href="#"
-              ><li class="nav-container-list">PROPERTIES</li>
-              <i class="fas fa-chevron-right"></i
-            ></a>
+        </div>
+        <div class="nav-bar-menu">
+          <ul>
+            <li class="nav-container-list"><a href="index.html">HOME</a></li>
+            <li class="nav-container-list"><a href="#">ABOUT US</a></li>
+            <li class="nav-container-list"><a href="#">PROPERTIES<i class="fas fa-chevron-right"></i></a></li>
+              
             <div class="nav-container-sublist">
               <ul class="nav-container">
                 <li class="nav-container-list">CONDO APARTMENTS</li>
@@ -81,118 +185,279 @@
                 <li class="nav-container-list">PREMIUM ESTATES</li>
               </ul>
             </div>
-            <a href="#"><li class="nav-container-list">BUILDERS</li></a>
-            <a href="#"><li class="nav-container-list">SERVICES</li></a>
-            <a href="#"><li class="nav-container-list">LISTING</li></a>
-            <a href="#"><li class="nav-container-list">CONTACT</li></a>
+            <li class="nav-container-list"><a href="#">BUILDERS</a></li>
+            <li class="nav-container-list"><a href="#">SERVICES</a></li>
+            <li class="nav-container-list"><a href="#">LISTING</a></li>
+            <li class="nav-container-list"><a href="#">CONTACT</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!--HEADER-->
-    <header>
+      -->
       <div class="container">
-        <div class="form-container row">
-          <!--DONT FORGET CHANGE CONTENTS-->
-          <div class="col-md-12 col-lg-2">TYPE BUTTON</div>
-          <div class="col-sm-12 col-md-6 col-lg-3">CHOOSE LOCATIONS</div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            PROPERTY TYPE DROPDOWN MENU
+        <div class="form-container">
+          <div class="row p-4">
+            <!--DONT FORGET CHANGE CONTENTS-->
+            <div
+              class="col-md-12 col-lg-2"
+              style="color: #555; font-size: 13px;"
+            >
+              TYPE BUTTON
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <h6 style="color: #555; font-size: 13px;">CHOOSE LOCATIONS</h6>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <input class="form-control" type="text" aria-label="Search" />
+                  <h6 class="dropdown-header">Alaskan/Hawaiian Time Zone</h6>
+                  <a class="dropdown-item" href="#">Alaska</a>
+                  <a class="dropdown-item" href="#">Hawaii</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Pacific Time Zone</h6>
+                  <a class="dropdown-item" href="#">California</a>
+                  <a class="dropdown-item" href="#">Nevada</a>
+                  <a class="dropdown-item" href="#">Oregon</a>
+                  <a class="dropdown-item" href="#">Washington</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Mountain Time Zone</h6>
+                  <a class="dropdown-item" href="#">Arizona</a>
+                  <a class="dropdown-item" href="#">Colorado</a>
+                  <a class="dropdown-item" href="#">Idaho</a>
+                  <a class="dropdown-item" href="#">Montana</a>
+                  <a class="dropdown-item" href="#">Nebraska</a>
+                  <a class="dropdown-item" href="#">New Mexico</a>
+                  <a class="dropdown-item" href="#">North Dakota</a>
+                  <a class="dropdown-item" href="#">Utah</a>
+                  <a class="dropdown-item" href="#">Wyoming</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Central Time Zone</h6>
+                  <a class="dropdown-item" href="#">Alabama</a>
+                  <a class="dropdown-item" href="#">Arkansas</a>
+                  <a class="dropdown-item" href="#">Illinois</a>
+                  <a class="dropdown-item" href="#">Lowa</a>
+                  <a class="dropdown-item" href="#">Kansas</a>
+                  <a class="dropdown-item" href="#">Kentucky</a>
+                  <a class="dropdown-item" href="#">Louisiana</a>
+                  <a class="dropdown-item" href="#">Minnesota</a>
+                  <a class="dropdown-item" href="#">Mississippi</a>
+                  <a class="dropdown-item" href="#">Missouri</a>
+                  <a class="dropdown-item" href="#">Oklahoma</a>
+                  <a class="dropdown-item" href="#">South Dakota</a>
+                  <a class="dropdown-item" href="#">Texas</a>
+                  <a class="dropdown-item" href="#">Tennessee</a>
+                  <a class="dropdown-item" href="#">Wisconsin</a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Eastern Time Zone</h6>
+                  <a class="dropdown-item" href="#">Connecticut</a>
+                  <a class="dropdown-item" href="#">Delaware</a>
+                  <a class="dropdown-item" href="#">Florida</a>
+                  <a class="dropdown-item" href="#">Georgia</a>
+                  <a class="dropdown-item" href="#">Indiana</a>
+                  <a class="dropdown-item" href="#">Maine</a>
+                  <a class="dropdown-item" href="#">Maryland</a>
+                  <a class="dropdown-item" href="#">Massachusetts</a>
+                  <a class="dropdown-item" href="#">Michigan</a>
+                  <a class="dropdown-item" href="#">New Jersey</a>
+                  <a class="dropdown-item" href="#">New York</a>
+                  <a class="dropdown-item" href="#">North Carolina</a>
+                  <a class="dropdown-item" href="#">Ohio</a>
+                  <a class="dropdown-item" href="#">Pennsylvania</a>
+                  <a class="dropdown-item" href="#">Rhode Island</a>
+                  <a class="dropdown-item" href="#">South Carolina</a>
+                  <a class="dropdown-item" href="#">Vermont</a>
+                  <a class="dropdown-item" href="#">Virginia</a>
+                  <a class="dropdown-item" href="#">West Virginia</a>
+                </div>
+              </div>
+              <div
+                class="col-sm-12 col-md-6 col-lg-3"
+                style="color: #555; font-size: 13px;"
+              >
+                PROPERTY TYPE DROPDOWN MENU
+              </div>
+              <div
+                class="col-sm-6 col-md-6 col-lg-2"
+                style="color: #555; font-size: 13px;"
+              >
+                BEDS DROPDOWN MENU
+              </div>
+              <div
+                class="col-sm-6 col-md-6 col-lg-2"
+                style="color: #555; font-size: 13px;"
+              >
+                BATHS DROPDOWN MENU
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-5">
+                <h6 style="color: #555; font-size: 13px;">PRICE RANGE</h6>
+
+                <div class="d-flex justify-content-center my-4">
+                  <span class="font-weight-bold mr-2 mt-1">$200</span>
+                  <div class="w-75">
+                    <input
+                      type="range"
+                      class="custom-range"
+                      min="$200"
+                      max="$10 000"
+                    />
+                  </div>
+                  <span class="font-weight-bold ml-2 valueSpan2">$10 000+</span>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-5">
+                <h6 style="color: #555; font-size: 13px;">PROPERTY AREA</h6>
+
+                <div class="d-flex justify-content-center my-4">
+                  <span class="font-weight-bold mr-2 mt-1">50sqm</span>
+                  <div class="w-75">
+                    <input
+                      type="range"
+                      class="custom-range"
+                      min="50sqm"
+                      max="18 193sqm"
+                    />
+                  </div>
+                  <span class="font-weight-bold ml-2 valueSpan2"
+                    >18 193sqm</span
+                  >
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-2">
+                <a href="#">SEARCH</a>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-2">BEDS DROPDOWN MENU</div>
-          <div class="col-sm-6 col-md-6 col-lg-2">BATHS DROPDOWN MENU</div>
-          <div class="col-sm-12 col-md-6 col-lg-3">PRICE RANGE</div>
-          <div class="col-sm-12 col-md-6 col-lg-3">PROPERTY AREA</div>
-          <div class="col-sm-12 col-md-12 col-lg-3">SEARCH</div>
         </div>
       </div>
     </header>
     <!--fırst SECTION-->
-    <section>
-      <div class="container row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="section-icon">
-            <a href="#"><i class="far fa-building"></i></a>
+
+    <div class="container">
+      <section>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="section-icon">
+                <a href="#"><i class="far fa-building"></i></a>
+              </div>
+              <div class="section-content">
+                <h3 class="section-head">HASSLE FREE</h3>
+                <p class="section-paragh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora iste, tempore corporis est nesciunt voluptates!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="section-content">
-            <h3 class="section-head">HASSLE FREE</h3>
-            <p class="section-paragh">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iste, tempore corporis est nesciunt voluptates!
-            </p>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="section-icon">
+                <a href="#"><i class="fas fa-hammer"></i></a>
+              </div>
+              <div class="section-content">
+                <h3 class="section-head">WELL CONSTRUCTED</h3>
+                <p class="section-paragh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora iste, tempore corporis est nesciunt voluptates!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="section-icon">
+                <a href="#"><i class="fas fa-warehouse"></i></a>
+              </div>
+              <div class="section-content">
+                <h3 class="section-head">FREE UTILITES</h3>
+                <p class="section-paragh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora iste, tempore corporis est nesciunt voluptates!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="section-icon">
+                <a href="#"><i class="fas fa-sign"></i></a>
+              </div>
+              <div class="section-content">
+                <h3 class="section-head">FLEXIBLE RENTALS</h3>
+                <p class="section-paragh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora iste, tempore corporis est nesciunt voluptates!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="section-icon">
+                <a href="#"><i class="fas fa-percentage"></i></a>
+              </div>
+              <div class="section-content">
+                <h3 class="section-head">EASY FINANCING</h3>
+                <p class="section-paragh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora iste, tempore corporis est nesciunt voluptates!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="section-icon">
+                <a href="#"><i class="far fa-file-alt"></i></a>
+              </div>
+              <div class="section-content">
+                <h3 class="section-head">SOLID PAPERWORK</h3>
+                <p class="section-paragh">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora iste, tempore corporis est nesciunt voluptates!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="section-icon">
-            <a href="#"><i class="far fa-building"></i></a>
-          </div>
-          <div class="section-content">
-            <h3 class="section-head">WELL CONSTRUCTED</h3>
-            <p class="section-paragh">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iste, tempore corporis est nesciunt voluptates!
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="section-icon">
-            <a href="#"><i class="far fa-building"></i></a>
-          </div>
-          <div class="section-content">
-            <h3 class="section-head">FREE UTILITES</h3>
-            <p class="section-paragh">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iste, tempore corporis est nesciunt voluptates!
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="section-icon">
-            <a href="#"><i class="far fa-building"></i></a>
-          </div>
-          <div class="section-content">
-            <h3 class="section-head">FLEXIBLE RENTALS</h3>
-            <p class="section-paragh">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iste, tempore corporis est nesciunt voluptates!
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="section-icon">
-            <a href="#"><i class="far fa-building"></i></a>
-          </div>
-          <div class="section-content">
-            <h3 class="section-head">EASY FINANCING</h3>
-            <p class="section-paragh">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iste, tempore corporis est nesciunt voluptates!
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="section-icon">
-            <a href="#"><i class="far fa-building"></i></a>
-          </div>
-          <div class="section-content">
-            <h3 class="section-head">SOLID PAPERWORK</h3>
-            <p class="section-paragh">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              iste, tempore corporis est nesciunt voluptates!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
     <!--FEATURED SECTION-->
     <section>
       <div class="container">
-        <div class="section-head">
+        <div class="featured-head">
           <h2>FEATURED PROPERTIES</h2>
           <a href="#">CHECK ALL</a>
         </div>
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <a href="#"
               ><img
                 src="images/FP-1.jpg"
@@ -202,7 +467,7 @@
             <a href="#" class="featured-button">FOR SALE</a>
             <div class="featured-paragh">
               <p>$1.2m</p>
-              <p>Leasehold</p>
+              <span>Leasehold</span>
             </div>
             <div class="featured-icon">
               <a href="#"><i class="far fa-clone"></i></a>
@@ -214,24 +479,29 @@
                 <p>Seminyak Area</p>
               </div>
               <i class="fas fa-info"></i>
-              <div class="row">
-                <div class="col-md-6 col-lg-4">Beds: 3</div>
-                <div class="col-md-6 col-lg-4">Baths: 3</div>
-                <div class="col-md-6 col-lg-4">Area: 150sqm</div>
-                <div class="col-md-6 col-lg-4">
-                  Pool: <i class="fas fa-check-square"></i>
+              <div class="row pt-3">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">Beds: 3</div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">Baths: 3</div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                  Area: 150sqm
                 </div>
-                <div class="col-md-6 col-lg-4">
-                  Internet: <i class="fas fa-check-square"></i>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                  Pool:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                  Cleaning: <i class="fas fa-minus-square"></i>
+                <div class="col-xs-6 col-md-6 col-lg-4">
+                  Internet:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-4">
+                  Cleaning:
+                  <i class="fas fa-minus-square text-danger ml-1 pt-1"></i>
                 </div>
               </div>
             </div>
           </div>
           <!--         2. CONTENT                  -->
-          <div class=".d-sm-none d-md-block col-md-6 col-lg-4">
+          <div class=".d-sm-none d-md-block col-md-6 col-lg-4 mb-4">
             <a href="#"
               ><img
                 src="images/FP-2.jpg"
@@ -241,7 +511,7 @@
             <a href="#" class="featured-button">HOT DEAL</a>
             <div class="featured-paragh">
               <p>$200,000</p>
-              <p>bi-annually</p>
+              <span>bi-annually</span>
             </div>
             <div class="featured-icon">
               <a href="#"><i class="far fa-clone"></i></a>
@@ -253,24 +523,27 @@
                 <p>Seminyak Area</p>
               </div>
               <i class="fas fa-info"></i>
-              <div class="row">
+              <div class="row pt-3">
                 <div class="col-md-6 col-lg-4">Beds: 3</div>
                 <div class="col-md-6 col-lg-4">Baths: 3</div>
                 <div class="col-md-6 col-lg-4">Area: 150sqm</div>
                 <div class="col-md-6 col-lg-4">
-                  Pool: <i class="fas fa-check-square"></i>
+                  Pool:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                  Internet: <i class="fas fa-check-square"></i>
+                  Internet:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                  Cleaning: <i class="fas fa-check-square"></i>
+                  Cleaning:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
               </div>
             </div>
           </div>
           <!--         3. CONTENT                  -->
-          <div class="d-sm-none d-md-none d-lg-block col-lg-4">
+          <div class="d-sm-none d-md-none d-lg-block col-lg-4 mb-4">
             <a href="#"
               ><img
                 src="images/FP-3.jpg"
@@ -280,7 +553,7 @@
             <a href="#" class="featured-button">LONG TERM RENTAL</a>
             <div class="featured-paragh">
               <p>$1600</p>
-              <p>per month</p>
+              <span>per month</span>
             </div>
             <div class="featured-icon">
               <a href="#"><i class="far fa-clone"></i></a>
@@ -292,18 +565,21 @@
                 <p>Seminyak Area</p>
               </div>
               <i class="fas fa-info"></i>
-              <div class="row">
+              <div class="row pt-3">
                 <div class="col-md-6 col-lg-4">Beds: 3</div>
                 <div class="col-md-6 col-lg-4">Baths: 3</div>
                 <div class="col-md-6 col-lg-4">Area: 150sqm</div>
                 <div class="col-md-6 col-lg-4">
-                  Pool: <i class="fas fa-check-square"></i>
+                  Pool:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                  Internet: <i class="fas fa-check-square"></i>
+                  Internet:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                  Cleaning: <i class="fas fa-check-square"></i>
+                  Cleaning:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
                 </div>
               </div>
             </div>
@@ -313,25 +589,26 @@
     </section>
     <!--   BOX SECTION   -->
     <div class="container">
-      <div class="box row">
-        <div class="col-md-12 col-lg">
-          <h3>Special Offers on Villa Long Term Rentals & Lease Agreements</h3>
-        </div>
-        <div class="col-md-12 col-lg-3">
-          <a href="#">CONTACT NOW</a>
+      <div class="box">
+        <div class="row">
+          <div class="col-md-12 col-lg">
+            <h3>
+              Special Offers on Villa Long Term Rentals & Lease Agreements
+            </h3>
+          </div>
+          <div class="col-md-12 col-lg-3 mt-4 mt-lg-0">
+            <a href="#">CONTACT NOW</a>
+          </div>
         </div>
       </div>
     </div>
     <!--  CITY SECTION     -->
     <section>
-      <div class="container row">
+      <div class="container row justify-content-center mx-0">
         <div class="col-md-12 col-lg-7">
           <a href="#">
-            <img
-              src="images/City-1.jpg"
-              class="city-section-img img-fluid"
-              alt=""
-            />
+            <img src="images/City-1.jpg" class="city-img" alt="" />
+            <!--   <div class="city-section-img"></div> -->
             <div class="city-section-content">
               <h3>California</h3>
               <p>23 Properties</p>
@@ -340,24 +617,16 @@
         </div>
         <div class="col-md-12 col-lg-5">
           <a href="#">
-            <img
-              src="images/City-2.jpg"
-              class="city-section-img img-fluid"
-              alt=""
-            />
+            <img src="images/City-2.jpg" class="city-img" alt="" />
             <div class="city-section-content">
               <h3>New York</h3>
               <p>12 Properties</p>
             </div>
           </a>
         </div>
-        <div class="col-md-12 col-lg-4">
+        <div class="col-md-12 col-lg-3">
           <a href="#">
-            <img
-              src="images/City-3.jpg"
-              class="city-section-img img-fluid"
-              alt=""
-            />
+            <img src="images/City-3.jpg" class="city-img" alt="" />
             <div class="city-section-content">
               <h3>San Francisco</h3>
               <p>8 Properties</p>
@@ -366,11 +635,7 @@
         </div>
         <div class="col-md-12 col-lg-3">
           <a href="#">
-            <img
-              src="images/City-4.jpg"
-              class="city-section-img img-fluid"
-              alt=""
-            />
+            <img src="images/City-4.jpg" class="city-img" alt="" />
             <div class="city-section-content">
               <h3>Texas</h3>
               <p>31 Properties</p>
@@ -379,11 +644,7 @@
         </div>
         <div class="col-md-12 col-lg-3">
           <a href="#">
-            <img
-              src="images/City-5.jpg"
-              class="city-section-img img-fluid"
-              alt=""
-            />
+            <img src="images/City-5.jpg" class="city-img" alt="" />
             <div class="city-section-content">
               <h3>New Orleans</h3>
               <p>19 Properties</p>
@@ -393,217 +654,246 @@
       </div>
     </section>
     <!--    CONTACT SECTION    -->
-    <div class="container-fluid row">
-      <div class="d-sm-none d-md-none d-lg-block col-lg-5">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314936.1911540504!2d-74.03876562897123!3d40.73149961802657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e1!3m2!1str!2str!4v1592770452631!5m2!1str!2str"
-          width="400"
-          height="550"
-          frameborder="0"
-          style="border: 0;"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </div>
-      <div class="col-md-12 col-lg-3">
-        <div class="container">
-          <h4>Our Headquarters</h4>
-          <div class="adress-section">
-            <h5>North America:</h5>
-            <p>795 Folsom Ave, Suite 600</p>
-            <p>San Francisco, CA 94107.</p>
-          </div>
-          <div class="adress-section">
-            <p><b>Phone:</b>+905556036039</p>
-            <p><b>Email:</b>ssinemsungur@gmail.com</p>
-          </div>
-          <div class="adress-section">
-            <h4>Working Hours</h4>
-            <p><b>Mon-Fri:</b> 10AM to 6PM</p>
-            <p><b>Saturday:</b> 11AM to 3PM</p>
-            <p><b>Sunday:</b> Closed</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-none d-md-none d-lg-block col-lg-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314936.1911540504!2d-74.03876562897123!3d40.73149961802657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e1!3m2!1str!2str!4v1592770452631!5m2!1str!2str"
+            width="556"
+            height="550"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+        <div
+          class="col-md-12 col-lg-3"
+          style="padding: 30px; background-color: #e5e5e5;"
+        >
+          <div class="container">
+            <h4
+              style="
+                font-size: 16px;
+                color: #444444;
+                margin-bottom: 30px;
+                font-family: roboto;
+              "
+            >
+              Our Headquarters
+            </h4>
+            <div class="adress-section">
+              <h5 style="font-size: 15px; font-weight: 700;">North America:</h5>
+              <p>
+                795 Folsom Ave, Suite 600 <br />
+                San Francisco, CA 94107.
+              </p>
+            </div>
+            <div class="adress-section">
+              <p>
+                <b>Phone:</b> +905556036039 <br />
+                <b>Email:</b> ssinemsungur@gmail.com
+              </p>
+            </div>
+            <div class="adress-section">
+              <h4 style="font-size: 16px; color: #444444; font-weight: 700;">
+                Working Hours
+              </h4>
+              <p>
+                <b>Mon-Fri:</b> 10AM to 6PM <br />
+                <b>Saturday:</b> 11AM to 3PM<br />
+                <b>Sunday:</b> Closed
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-12 col-lg-4">
-        <!--   FORM PART  -->
-        <h2>Get a Quick Quote</h2>
-        <form>
-          <div class="form-group">
-            <input
-              type="name"
-              class="form-control"
-              placeholder="Full Name"
-              required
-            />
+        <div class="col-md-12 col-lg-4 p-0">
+          <!--   FORM PART  -->
+          <div class="form-content">
+            <h2 style="font-size: 20px; color: #e5e5e5; margin-bottom: 30px;">
+              Get a Quick Quote
+            </h2>
+            <form>
+              <div class="form-group">
+                <input
+                  type="name"
+                  class="form-control"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email adress"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="phone"
+                  class="form-control"
+                  placeholder="Phone Number +905556036039"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="What are you Looking for? (Ex: Villa on the Beach)"
+                  required
+                  style="resize: none;"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button>SEND EMAIL</button>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email adress"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="phone"
-              class="form-control"
-              placeholder="Phone Number +905556036039"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <textarea
-              class="form-control"
-              rows="4"
-              placeholder="What are you Looking for? (Ex: Villa on the Beach)"
-              required
-              style="resize: none;"
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <button>SEND MAIL</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
     <!--                       TABS CONTENT SECTION(ref)                   -->
     <section>
-      <div class="container row">
-        <div class="col-sm-12 col-md-8">
-          <div class="tab-content">
-            <ul class="nav nav-tab">
-              <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#why-us"
-                  >Why Us?</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#properties"
-                  >Properties</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#legal">Legal</a>
-              </li>
-            </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
             <div class="tab-content">
-              <div class="tab-pane fade show active" id="why-us">
-                <p>
-                  Proin elit arcu, rutrum commodo, vehicula tempus, commodo a,
-                  risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
-                  mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                  massa et lorem. Mauris dapibus lacus auctor risus. Aenean
-                  tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend
-                  adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                  Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel
-                  pede varius sollicitudin. Sed ut dolor nec orci tincidunt
-                  interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                </p>
-                <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5>964</h5>
-                    <p>FLOORS BUILT</p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5>8514</h5>
-                    <p>EMPLOYEES</p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5>458</h5>
-                    <p>HAPPY CLIENTS</p>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-3">
-                    <h5>159</h5>
-                    <p>CITIES SERVED</p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="properties">
-                <p>
-                  Mauris eleifend est et turpis. Duis id erat. Suspendisse
-                  potenti. Aliquam vulputate, pede vel vehicula accumsan, mi
-                  neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum
-                  non ante. Class aptent taciti sociosqu ad litora torquent per
-                  conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque
-                  eu urna vel enim commodo pellentesque. Praesent eu risus
-                  hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
-                  nec, feugiat nec, luctus a, lacus.
-                </p>
-                <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-4">
-                    <ul class="properties-content">
-                      <li>
-                        <p><i class="fas fa-check"></i>100% Assurance</p>
-                      </li>
-                      <li>
-                        <p><i class="fas fa-check"></i>Hard Working</p>
-                      </li>
-                      <li>
-                        <p><i class="fas fa-check"></i>Trustworthy</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-4">
-                    <ul class="properties-content">
-                      <li>
-                        <p><i class="fas fa-check"></i>Intelligent</p>
-                      </li>
-                      <li>
-                        <p><i class="fas fa-check"></i>Always Curious</p>
-                      </li>
-                      <li>
-                        <p><i class="fas fa-check"></i>Perfectionists</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-4">
-                    <ul class="properties-content">
-                      <li>
-                        <p><i class="fas fa-check"></i>Friendly & Helpful</p>
-                      </li>
-                      <li>
-                        <p><i class="fas fa-check"></i>Accomodating Nature</p>
-                      </li>
-                      <li>
-                        <p><i class="fas fa-check"></i>Available 24x7</p>
-                      </li>
-                    </ul>
+              <ul class="nav nav-tab">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#why-us"
+                    >Why Us?</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#properties"
+                    >Properties</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#legal">Legal</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="why-us">
+                  <p>
+                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a,
+                    risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
+                    mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean
+                    tempor ullamcorper leo. Vivamus sed magna quis ligula
+                    eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae
+                    ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et
+                    mauris vel pede varius sollicitudin. Sed ut dolor nec orci
+                    tincidunt interdum. Phasellus ipsum. Nunc tristique tempus
+                    lectus.
+                  </p>
+                  <div class="row text-center">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <h5>964</h5>
+                      <p>FLOORS BUILT</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <h5>8514</h5>
+                      <p>EMPLOYEES</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <h5>458</h5>
+                      <p>HAPPY CLIENTS</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                      <h5>159</h5>
+                      <p>CITIES SERVED</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="legal">
-                <div class="row">
-                  <div class="col-12">
-                    <p>
-                      Morbi tincidunt, dui sit amet facilisis feugiat, odio
-                      metus gravida ante, ut pharetra massa metus id nunc. Duis
-                      scelerisque molestie turpis. Sed fringilla, massa eget
-                      luctus malesuada, metus eros molestie lectus, ut tempus
-                      eros massa ut dolor.
-                    </p>
+                <div class="tab-pane fade" id="properties">
+                  <p>
+                    Mauris eleifend est et turpis. Duis id erat. Suspendisse
+                    potenti. Aliquam vulputate, pede vel vehicula accumsan, mi
+                    neque rutrum erat, eu congue orci lorem eget lorem.
+                    Vestibulum non ante. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos. Fusce
+                    sodales. Quisque eu urna vel enim commodo pellentesque.
+                    Praesent eu risus hendrerit ligula tempus pretium. Curabitur
+                    lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+                  </p>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                      <ul class="properties-content">
+                        <li>
+                          <p><i class="fas fa-check"></i>100% Assurance</p>
+                        </li>
+                        <li>
+                          <p><i class="fas fa-check"></i>Hard Working</p>
+                        </li>
+                        <li>
+                          <p><i class="fas fa-check"></i>Trustworthy</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                      <ul class="properties-content">
+                        <li>
+                          <p><i class="fas fa-check"></i>Intelligent</p>
+                        </li>
+                        <li>
+                          <p><i class="fas fa-check"></i>Always Curious</p>
+                        </li>
+                        <li>
+                          <p><i class="fas fa-check"></i>Perfectionists</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                      <ul class="properties-content">
+                        <li>
+                          <p><i class="fas fa-check"></i>Friendly & Helpful</p>
+                        </li>
+                        <li>
+                          <p><i class="fas fa-check"></i>Accomodating Nature</p>
+                        </li>
+                        <li>
+                          <p><i class="fas fa-check"></i>Available 24x7</p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+                <div class="tab-pane fade" id="legal">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        Morbi tincidunt, dui sit amet facilisis feugiat, odio
+                        metus gravida ante, ut pharetra massa metus id nunc.
+                        Duis scelerisque molestie turpis. Sed fringilla, massa
+                        eget luctus malesuada, metus eros molestie lectus, ut
+                        tempus eros massa ut dolor.
+                      </p>
+                    </div>
 
-                  <div class="col-12">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-6">
-                        <address>
-                          <b>Headquarters:</b>
-                          <br />
+                    <div class="col-12">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                          <address style="color: #555555;">
+                            <b>Headquarters:</b>
+                            <br />
 
-                          795 Folsom Ave, Suite 600
-                          <br />
-                          San Francisco, CA 94107
-                          <br />
-                        </address>
-                      </div>
-                      <div class="col-sm-12 col-md-6">
-                        <div class="adress-section">
-                          <span><b>Phone:</b>+905556036039</span>
-                          <span><b>Fax:</b>(1)1147521433</span>
-                          <span><b>Email:</b>ssinemsungur@gmail.com</span>
+                            795 Folsom Ave, Suite 600
+                            <br />
+                            San Francisco, CA 94107
+                            <br />
+                          </address>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <div class="adress-section">
+                            <span><b>Phone:</b> +905556036039</span><br />
+                            <span><b>Fax:</b> (1)1147521433</span><br />
+                            <span><b>Email:</b> ssinemsungur@gmail.com</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -612,29 +902,34 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <h5>Top Builders</h5>
-          <div class="client-grid row">
-            <div class="col-6">
-              <a href="#">
-                <img src="images/Clients-1.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="#">
-                <img src="images/Clients-2.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="#">
-                <img src="images/Clients-3.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="#">
-                <img src="images/Clients-4.png" class="img-fluid" alt="" />
-              </a>
+          <div class="col-sm-12 col-md-4">
+            <h5
+              class="text-center"
+              style="margin-bottom: 30px; color: #444; font-size: 16px;"
+            >
+              Top Builders
+            </h5>
+            <div class="client-grid row">
+              <div class="col-6">
+                <a href="#">
+                  <img src="images/Clients-1.png" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="#">
+                  <img src="images/Clients-2.png" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="#">
+                  <img src="images/Clients-3.png" class="img-fluid" alt="" />
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="#">
+                  <img src="images/Clients-4.png" class="img-fluid" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -642,102 +937,114 @@
     </section>
     <!--             FOOTER PART                  -->
     <footer>
-      <div class="container row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <h4 class="text-uppercase">Popular Locations</h4>
-          <div class="row">
-            <div class="col-6">
-              <ul>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i
-                  ><a href="#">California</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Nevada</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Hawaii</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i
-                  ><a href="#">Washington</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Ottawa</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Virginia</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Ohio</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <ul>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Oregon</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Colorado</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Kentucky</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Texas</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">Miami</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i><a href="#">New York</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i
-                  ><a href="#">New Jersey</a>
-                </li>
-              </ul>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+            <h4 class="text-uppercase">Popular Locations</h4>
+            <div class="row">
+              <div class="col-6 mb-4">
+                <ul>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">California</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Nevada</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Hawaii</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Washington</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Ottawa</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Virginia</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Ohio</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 mb-4">
+                <ul>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Oregon</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Colorado</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Kentucky</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Texas</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Miami</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">New York</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">New Jersey</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <h4 class="text-uppercase">Connect Socially</h4>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-apple"></i></a>
-          <a href="#"><i class="fab fa-google-play"></i></a>
-          <a href="#"><i class="fab fa-skype"></i></a>
-        </div>
-        <div class="col-md-12 col-lg-4 order-lg-first">
-          <img src="images/icon-logo-house.svg" alt="" />
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <h4 class="text-uppercase" style="margin-bottom: 30px;">
+              Connect Socially
+            </h4>
+            <div class="footer-social" style="margin-bottom: 32px;">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-apple"></i></a>
+              <a href="#"><i class="fab fa-google-play"></i></a>
+              <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+            <div class="footer-social-button">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+              <a href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-5 order-lg-first pb-5">
+            <img src="images/icon-logo-house.svg" alt="" />
 
-          <p>
-            We believe in <b>Simple, Creative, Flexible</b> Design Standards
-            with a Retina & Responsive Approach. Browse the amazing Features
-            this template offers.
-          </p>
-          <p>Copyrights © 2020 Sinem Sungur</p>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.75);
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+              "
+            >
+              We believe in <b>Simple, Creative, Flexible</b> Design Standards
+              with a Retina & Responsive Approach. Browse the amazing Features
+              this template offers.
+            </p>
+            <p style="color: rgba(255, 255, 255, 0.75);">
+              Copyrights © 2020 Sinem Sungur
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-
-    <!--JavaScript-->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
