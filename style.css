@@ -9,6 +9,9 @@ body {
 .row {
   margin: 0;
 }
+a:hover {
+  color: #eee !important;
+}
 
 header {
   background-image: url(images/Header-img.jpg);
@@ -115,6 +118,9 @@ li.top-link-item:not(:first-child) {
 .top-item-submenu li:hover {
   background-color: #eee;
 }
+a:hover {
+  color: #666 !important;
+}
 @media screen and (min-width: 768px) {
   /* TOP BAR */
   .col-sm-12.col-md-3.p-lg-0.text-lg-left a {
@@ -125,6 +131,9 @@ li.top-link-item:not(:first-child) {
   }
   .dropdown-paragh {
     right: 0;
+  }
+  a:hover {
+    color: #666 !important;
   }
 }
 
@@ -169,5 +178,8 @@ li.top-link-item:not(:first-child) {
   }
   .top-bar-dropdown-menu a:hover {
     background-color: transparent;
+  }
+  a:hover {
+    color: #eee !important;
   }
 }
