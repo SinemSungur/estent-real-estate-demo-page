@@ -133,11 +133,11 @@ section {
   padding: 0 12px;
 }
 .section-icon i {
-  color: #2C3E50 !important;
+  color: #2c3e50 !important;
   font-size: 2rem;
   width: 5.5rem;
   height: 4rem;
-  padding: 0 .75rem;
+  padding: 0 0.75rem;
 }
 p.section-paragh {
   font-size: 16px;
@@ -148,7 +148,7 @@ p.section-paragh {
 h3.section-head {
   color: #333333;
   font-size: 1rem;
-  font-family: rubik,sans-serif!important;
+  font-family: rubik, sans-serif !important;
 }
 
 /*  FEATURED SECTION   */
@@ -249,8 +249,8 @@ h3.section-head {
 }
 .featured-head a:hover {
   background-color: #444;
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .fa-info:hover {
   background-color: #444;
@@ -296,6 +296,36 @@ form button:hover {
   color: #fff;
   cursor: pointer;
 }
+
+/*  TABS CONTENT SECTION(ref)   */
+
+.nav-item .nav-link {
+  color: #444 !important;
+}
+.tab-content p {
+  color: #555;
+}
+.tab-content h5 {
+  font-size: 40px;
+  color: #d2d2d2;
+}
+.col-sm-12.col-md-3.p-lg-0.text-lg-left a {
+  border-bottom: none;
+}
+li {
+  list-style: none;
+}
+.tab-content .active:hover {
+  background-color: #55555521;
+  border-radius: 5px;
+}
+.client-grid img {
+  padding: 20px;
+}
+.tab-content address {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   /* TOP BAR */
   .col-sm-12.col-md-3.p-lg-0.text-lg-left a {
@@ -310,17 +340,17 @@ form button:hover {
   a:hover {
     color: #666 !important;
   }
-/*  FEATURED SECTION   */
+  /*  FEATURED SECTION   */
 
-.featured-head h2 {
-  font-size: 1.75rem;
-}
-.featured-icon {
-  top: 177px;
-}
-.featured-paragh {
-  top: 157px;
-}
+  .featured-head h2 {
+    font-size: 1.75rem;
+  }
+  .featured-icon {
+    top: 177px;
+  }
+  .featured-paragh {
+    top: 157px;
+  }
 }
 @media screen and (min-width: 1024px) {
   /* TOP BAR  */
@@ -367,22 +397,21 @@ form button:hover {
   a:hover {
     color: #eee !important;
   }
-/*  FEATURED SECTION   */
-.featured-icon {
-  top: 152px;
-}
-.featured-paragh {
-  top: 127px;
-}
-.fa-info {
-  bottom: 151px;
-}
+  /*  FEATURED SECTION   */
+  .featured-icon {
+    top: 152px;
+  }
+  .featured-paragh {
+    top: 127px;
+  }
+  .fa-info {
+    bottom: 151px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-/*  CONTACT PART */
-iframe {
-  width: 1060px;
-}
-
+  /*  CONTACT PART */
+  iframe {
+    width: 1060px;
+  }
 }
