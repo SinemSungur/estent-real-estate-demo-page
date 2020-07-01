@@ -125,6 +125,69 @@ li.top-link-item:not(:first-child) {
 a:hover {
   color: #666 !important;
 }
+
+
+/*  FOOTER PART */
+footer {
+  background-color: #2c3e50;
+  padding: 80px 0;
+}
+footer li {
+  list-style: none;
+}
+footer ul li i {
+  color: rgb(156, 150, 150);
+  font-size: 0.75em;
+}
+footer li a:hover {
+color: rgba(255,255,255,.9) !important;
+text-decoration: none;
+}
+footer h4 {
+  font-size: 16px;
+  color: #eee;
+  margin-bottom: 30px;
+}
+
+footer a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 0 5px 5px;
+}
+footer img {
+  height: 80px;
+}
+.footer-social-button a {
+  margin-top: 15px;
+  background-color: transparent;
+  box-shadow: 1px 3px #292f36;
+  padding: 8px 22px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-social-button a:hover {
+  background-color: #111!important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.footer-social .fab {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: .875rem;
+}
+.footer-social a:hover i {
+  transform: translateY(10px);
+}
+footer i {
+  transition: 300ms all;
+}
+
 @media screen and (min-width: 768px) {
   /* TOP BAR */
   .col-sm-12.col-md-3.p-lg-0.text-lg-left a {
@@ -186,4 +249,10 @@ a:hover {
   a:hover {
     color: #eee !important;
   }
+
+/*  FOOTER PART  */
+footer ul li {
+  font-size: 14px;
+}
+
 }
