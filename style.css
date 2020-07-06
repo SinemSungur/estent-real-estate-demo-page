@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+.row {
+  margin: 0;
+}
+a:hover {
+  color: #eee !important;
+}
+
+header {
+  background-image: url(images/Header-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+/* NAVIGATION */
+.navbar {
+  background-color: #333;
+  z-index: 990;
+}
+.navbar-content-lg {
+  display: none;
+}
+.nav-container-sublist {
+  display: none;
+  list-style: none;
+  cursor: pointer;
+  color: #e5e5e5;
+  font-size: 13px;
+}
+.nav-container-list {
+  list-style: none !important;
+  padding: 11px 5px;
+  transition: 300ms all;
+}
+.nav-container-list:hover {
+  font-weight: 700;
+}
+li.navitem:hover .nav-container-sublist {
+  display: block;
+}
+a.navlink {
+  color: #f7f7f7 !important;
+  font-size: 13px;
+}
+a.navlink:hover {
+  text-decoration: none !important;
+}
+.navitem {
+  padding: 14px 17px;
+}
+.navbar-collapse li:not(:last-child) {
+  border-bottom: 1px solid #f7f7f75d;
+}
+
+/*     HEADER FORM   */
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.904);
+  margin-top: 60px;
+  border-top: 2px solid #f0ad4e;
+  position: relative;
+}
+a.form-top-content {
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  left: 36px;
+  padding: 7px 17px;
+  color: #fff;
+  background-color: #f0ad4e;
+  font-weight: 700;
+}
+
+.form-container h6 {
+  color: #555555;
+  font-size: 13px;
+  font-weight: 700;
+}
+.form-container span {
+  font-size: 9px;
+  line-height: 1.333;
+  color: #2c3e50;
+}
+/*      checked box       */
+.checked-box input {
+  width: 80px;
+  height: 35px;
+  background-color: #2c3e50;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  border-radius: 5px;
+}
+#header-checkbox::before {
+  content: "";
+  width: 33px;
+  height: 24px;
+  background-color: #fff;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+  transition: 300ms all;
+  border-radius: 5px;
+}
+span.checked-box-rent {
+  position: absolute;
+  left: 57px;
+  top: 31px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 0;
+  color: white;
+}
+span.checked-box-buy {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  top: 32px;
+  left: 20px;
+  z-index: 0;
+  color: white;
+}
+#header-checkbox:checked::before {
+  left: 40px;
+}
+/*      Dropdown Menuzz     */
+.btn.dropdown-toggle {
+  width: 100%;
+  text-align: start;
+  color: #999;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.btn.dropdown-toggle:hover {
+  background-color: rgba(153, 153, 153, 0.555);
+  color: #999;
+}
+.dropdown-header {
+  font-size: 0.875rem;
+  color: #6c757d !important;
+  font-weight: 400 !important;
+}
+.dropdown-item:hover {
+  background-color: rgba(153, 153, 153, 0.555);
+  color: #212529 !important;
+  cursor: pointer;
+}
+.dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.header-search {
+  display: block;
+  padding: 8px 22px;
+  background-color: #2c3e50;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form-top-content, .header-search:hover {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+@media screen and (min-width: 768px) {
+  /*  Header Form  */
+  a.form-top-content {
+    top: 268px;
+    left: 56px;
+    height: 43px;
+  }
+}
+@media screen and (min-width: 1024px) {
+
+  /* NAVIGATION */
+
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  .navbar-content-lg {
+    display: block;
+  }
+  ul.navbar-nav {
+    display: unset;
+  }
+  li.navitem {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .nav-container-sublist ul {
+    display: none;
+  }
+  .navitem:hover .nav-container-sublist ul {
+    display: block;
+    position: absolute;
+    margin-left: -15px;
+  }
+  .nav-container-sublist {
+    position: relative;
+    padding-top: 1em;
+  }
+  .nav-container-sublist ul {
+    position: absolute;
+    top: 100%;
+    border: 1px solid black;
+  }
+  li.nav-container-list {
+    list-style: none;
+    color: #b2bcc7;
+    padding: 7px 13px;
+    transition: 300ms all;
+  }
+  li.nav-container-list:not(:last-child) {
+    border-bottom: 1px dotted #5e61649d;
+  }
+  li.nav-container-list:hover {
+    transform: translateX(5px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  /*  Header Form */
+  a.form-top-content {
+    top: 264px;
+    left: 178px;
+}
+}
