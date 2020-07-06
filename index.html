@@ -161,79 +161,32 @@
           </div>
         </div>
       </nav>
-
-      <!--      <div class="nav-logo">
-          <a href="index.html">
-            <img src="images/icon-logo-house.svg" class="icon-logo" alt="" />
-            <p>estent</p>
-          </a>
-        </div>
-        <div class="nav-bar-icons">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="nav-bar-menu">
-          <ul>
-            <li class="nav-container-list"><a href="index.html">HOME</a></li>
-            <li class="nav-container-list"><a href="#">ABOUT US</a></li>
-            <li class="nav-container-list"><a href="#">PROPERTIES<i class="fas fa-chevron-right"></i></a></li>
-              
-            <div class="nav-container-sublist">
-              <ul class="nav-container">
-                <li class="nav-container-list">CONDO APARTMENTS</li>
-                <li class="nav-container-list">LUXURY VILLAS</li>
-                <li class="nav-container-list">PREMIUM ESTATES</li>
-              </ul>
-            </div>
-            <li class="nav-container-list"><a href="#">BUILDERS</a></li>
-            <li class="nav-container-list"><a href="#">SERVICES</a></li>
-            <li class="nav-container-list"><a href="#">LISTING</a></li>
-            <li class="nav-container-list"><a href="#">CONTACT</a></li>
-          </ul>
-        </div>
-      -->
+      <a href="#" class="form-top-content">SEARCH CONTENT</a>
       <div class="container">
         <div class="form-container">
           <div class="row p-4">
             <!--DONT FORGET CHANGE CONTENTS-->
-            <div
-              class="col-md-12 col-lg-2"
-              style="color: #555; font-size: 13px;"
-            >
-              TYPE BUTTON
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3">
-              <h6 style="color: #555; font-size: 13px;">CHOOSE LOCATIONS</h6>
-
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+            <div class="col-md-12 col-lg-2 px-3 mb-4">
+              <!-- checked box -->
+              <h6>
+                TYPE
+              </h6>
+              <div class="checked-box">
+                <input type="checkbox" name="" id="header-checkbox" />
+                <span class="checked-box-buy">Buy</span>
+                <span class="checked-box-rent">Rent</span>
               </div>
-
-              <div class="dropdown">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 px-3 mb-4">
+              <h6>CHOOSE LOCATIONS</h6>
+              <div class="dropup">
                 <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
+                  class="btn dropdown-toggle"
                   data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
                 >
-                  Dropdown button
+                  Nothing selected
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu w-100">
                   <input class="form-control" type="text" aria-label="Search" />
                   <h6 class="dropdown-header">Alaskan/Hawaiian Time Zone</h6>
                   <a class="dropdown-item" href="#">Alaska</a>
@@ -295,62 +248,108 @@
                   <a class="dropdown-item" href="#">West Virginia</a>
                 </div>
               </div>
-              <div
-                class="col-sm-12 col-md-6 col-lg-3"
-                style="color: #555; font-size: 13px;"
-              >
-                PROPERTY TYPE DROPDOWN MENU
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 px-3 mb-4">
+              <h6>PROPERTY TYPE</h6>
+              <div class="dropup">
+                <button
+                  class="btn dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  Any
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li class="dropdown-item disabled">Any</li>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-header">Residental</div>
+                  <li class="dropdown-item">Apartment</li>
+                  <li class="dropdown-item">Condo</li>
+                  <li class="dropdown-item">Villa</li>
+                  <li class="dropdown-item">Building</li>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-header">Commercial</div>
+                  <li class="dropdown-item">Shop</li>
+                  <div class="dropdown-item">Office</div>
+                  <div class="dropdown-item">Warehouse</div>
+                </ul>
               </div>
-              <div
-                class="col-sm-6 col-md-6 col-lg-2"
-                style="color: #555; font-size: 13px;"
-              >
-                BEDS DROPDOWN MENU
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 px-3 mb-4">
+              <h6>
+                BEDS
+              </h6>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                Nothing selected
+                </button>
+                <ul class="dropdown-menu w-75">
+                  <li class="dropdown-item">1</li>
+                  <li class="dropdown-item">2</li>
+                  <li class="dropdown-item">3</li>
+                  <li class="dropdown-item">4</li>
+                  <li class="dropdown-item">5+</li>
+                </ul>
               </div>
-              <div
-                class="col-sm-6 col-md-6 col-lg-2"
-                style="color: #555; font-size: 13px;"
-              >
-                BATHS DROPDOWN MENU
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 px-3 mb-4">
+              <h6>
+                BATHS
+              </h6>
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                Nothing selected
+                </button>
+                <ul class="dropdown-menu w-75">
+                  <li class="dropdown-item">1</li>
+                  <li class="dropdown-item">2</li>
+                  <li class="dropdown-item">3</li>
+                  <li class="dropdown-item">4</li>
+                  <li class="dropdown-item">5+</li>
+                </ul>
               </div>
+            </div>
 
-              <div class="col-sm-12 col-md-6 col-lg-5">
-                <h6 style="color: #555; font-size: 13px;">PRICE RANGE</h6>
+            <div class="col-sm-12 col-md-6 col-lg-5 px-3 mb-4">
+              <h6>PRICE RANGE</h6>
 
-                <div class="d-flex justify-content-center my-4">
-                  <span class="font-weight-bold mr-2 mt-1">$200</span>
-                  <div class="w-75">
-                    <input
-                      type="range"
-                      class="custom-range"
-                      min="$200"
-                      max="$10 000"
-                    />
-                  </div>
-                  <span class="font-weight-bold ml-2 valueSpan2">$10 000+</span>
+              <div class="d-flex justify-content-center mb-4">
+                <span class="font-weight-bold mr-2 mt-1">$200</span>
+                <div class="w-75">
+                  <input
+                    type="range"
+                    class="custom-range"
+                    min="$200"
+                    max="$10 000"
+                  />
                 </div>
+                <span class="font-weight-bold ml-2 valueSpan2">$10 000+</span>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-5">
-                <h6 style="color: #555; font-size: 13px;">PROPERTY AREA</h6>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5 px-3 mb-4">
+              <h6>PROPERTY AREA</h6>
 
-                <div class="d-flex justify-content-center my-4">
-                  <span class="font-weight-bold mr-2 mt-1">50sqm</span>
-                  <div class="w-75">
-                    <input
-                      type="range"
-                      class="custom-range"
-                      min="50sqm"
-                      max="18 193sqm"
-                    />
-                  </div>
-                  <span class="font-weight-bold ml-2 valueSpan2"
-                    >18 193sqm</span
-                  >
+              <div class="d-flex justify-content-center">
+                <span class="font-weight-bold mr-2 mt-1">50sqm</span>
+                <div class="w-75">
+                  <input
+                    type="range"
+                    class="custom-range"
+                    min="50sqm"
+                    max="18 193sqm"
+                  />
                 </div>
+                <span class="font-weight-bold ml-2 valueSpan2">18 193sqm</span>
               </div>
-              <div class="col-sm-12 col-md-12 col-lg-2">
-                <a href="#">SEARCH</a>
-              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-2 px-3">
+              <a class="header-search mt-2" href="#">SEARCH</a>
             </div>
           </div>
         </div>
