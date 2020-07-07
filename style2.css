@@ -1,0 +1,9 @@
+/* ABOUT US PART*/
+.aboutus-head {
+    background-image: url(images/Aboutus-Header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
