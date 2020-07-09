@@ -1,10 +1,10 @@
 
-/*   SERVICES SUBPAGE   */
-.services-header {
-        background-image: url(images/Services-head.jpg);
+/*   LISTING SUBPAGE   */
+.listing-header {
+        background-image: url(images/Listing-header.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 550px;
-        margin-top: -50px;
+        margin-top: -10px;
 }
