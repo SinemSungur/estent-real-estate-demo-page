@@ -1,25 +1,10 @@
-/*   PROPERTIES SUBPAGE   */
 
-.properties-header {
-  
-        background-image: url(images/Properties-header.jpg);
-        background-position: top center;
+/*   SERVICES SUBPAGE   */
+.services-header {
+        background-image: url(images/Services-head.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 550px;
-        margin-top: -10px;
-        padding-bottom: 3rem;    
-}
-
-
-/*  BUILDERS SUBPAGE   */
-.builders-header {
-  
-        background-image: url(images/Builders-page-title.jpg);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
-        margin-top: -10px;
-        padding-bottom: 3rem;    
+        margin-top: -50px;
 }
