@@ -82,7 +82,8 @@ ul.top-item-submenu {
   align-items: center;
   justify-content: center;
 }
-.dropdown-paragh {
+
+.top-bar-dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -98,9 +99,11 @@ ul.top-item-submenu {
 .top-bar-dropdown2 {
   position: relative;
 }
-.top-bar-dropdown2:hover .dropdown-paragh {
+.top-bar-dropdown2:hover .top-bar-dropdown-content {
   display: block;
 }
+
+
 li.top-link-item:not(:first-child) {
   border-left: 1px solid #66666641;
 }
