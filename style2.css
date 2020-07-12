@@ -7,3 +7,44 @@
     min-height: 100vh;
     padding-bottom: 3rem;
 }
+.aboutus-section {
+    padding: 80px 0;
+}
+.aboutus-section h4 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.aboutus-section p {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+.aboutus-img-card-content {
+    padding: 20px;
+}
+.aboutus-img-card-content h6 {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.aboutus-img-card-content p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.aboutus-img-card-content a {
+    padding: 8px 22px;
+    color: white;
+    background-color: #2C3E50;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.aboutus-card-content {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 48px;
+    border-radius: 3px;
+}
