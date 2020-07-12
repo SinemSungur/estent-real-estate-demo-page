@@ -1,0 +1,29 @@
+/* ABOUT US PART*/
+.aboutus-head {
+    background-image: url(images/Aboutus-Header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+/*     OUR TEAM PART   */
+
+/* ı build about-section and h4 p before */
+.team-title h6 {
+    color: #444;
+    font-size: 20px;
+}
+.team-title p {
+    color: #2C3E50;
+    font-size: 16px;
+}
+.team-content p {
+    font-size: 16px;
+    color: #777;
+}
+.team-list {
+    padding: 0 10px 50px;
+}
+/* i build social icons for main page before. they have the same class name*/
+
