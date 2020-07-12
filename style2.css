@@ -7,3 +7,47 @@
     min-height: 100vh;
     padding-bottom: 3rem;
 }
+/*   WHAT WE DO PART    */
+
+#aboutus-article-part {
+    margin: 60px 0;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+#aboutus-article-part h4 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+#aboutus-article-part .card-header {
+    padding: .75rem;
+    margin-bottom: 5px;
+    background-color: #eee;
+}
+#aboutus-article-part .card-header button {
+    color: #444;
+    font-size: 16px;
+    font-weight: 700;
+}
+#aboutus-article-part .card-header button:hover {
+ text-decoration: none;
+}
+#aboutus-article-part .card {
+    border: none;
+    background-color: #f9f9f9;
+}
+#aboutus-article-part .card-body {
+    color: #555;
+    font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+    #aboutus-article-part h4 {
+        font-size: 28px;
+    }
+#accordionExample {
+    width: 85%;
+}
+}
