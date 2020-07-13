@@ -1,9 +1,21 @@
 /* ABOUT US PART*/
 .aboutus-head {
-    background-image: url(images/Aboutus-Header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    padding-bottom: 3rem;
+  background-image: url(images/Aboutus-Header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+/*   PARTNERS PART   */
+#aboutus-ourpartners-section {
+  background-color: #fef6f3;
+  padding: 50px 0;
+}
+#aboutus-ourpartners-section img {
+    padding: 20px;
+    width: 80%;
+}
+.client-grid {
+    text-align: center;
 }
