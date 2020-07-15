@@ -1,12 +1,74 @@
 /*   PROPERTIES SUBPAGE   */
 
 .properties-header {
-  
-        background-image: url(images/Properties-header.jpg);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
-        margin-top: -10px;
-        padding-bottom: 3rem;    
+  background-image: url(images/Properties-header.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: -10px;
+  padding-bottom: 3rem;
+}
+/*     PROPERTIES PAGE CONTENT    */
+.properties-section p {
+  color: #555555;
+  font-size: 16px;
+}
+.properties-section h6 {
+  font-size: 18px;
+  color: #444444;
+  border-bottom: 1px solid #bbb8b8b0;
+  padding-bottom: 15px;
+}
+/* UPDATE FOR STİCKY SIDABAR */
+.widget {
+  padding-top: 50px;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+}
+.widget h5 {
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/*  form  */
+.reserve-form-container h6 {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  color: #555555;
+  font-size: 16px;
+  margin: 0;
+}
+.reserve-form-container {
+        width: 250px;
+}
+.reserve-container-body {
+  padding: 1.25rem;
+  background-color: #f8f9fa;
+}
+.reserve-container-body input,
+textarea {
+  padding: 8px 14px;
+  border: 2px solid #ddd;
+  margin-bottom: 15px;
+  color: #555;
+  width: 100%;
+}
+.reserve-container-body textarea {
+  height: 100px;
+  resize: none;
+}
+#rsubmit {
+  background-color: #2c3e50;
+  color: white;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 7px;
+}
+#rsubmit:hover {
+        text-decoration: none;
 }
