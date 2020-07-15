@@ -1,12 +1,90 @@
 /*   PROPERTIES SUBPAGE   */
 
 .properties-header {
-  
-        background-image: url(images/Properties-header.jpg);
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
-        margin-top: -10px;
-        padding-bottom: 3rem;    
+  background-image: url(images/Properties-header.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: -10px;
+  padding-bottom: 3rem;
+}
+
+/*    TESTIMONIALS   */
+.testimonials h4 {
+  color: #444444;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.testimonials {
+  padding-top: 50px;
+  border-top: 1px solid #eee;
+}
+.testimonial-container p {
+  color: #555555;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.testimonial-container {
+  padding: 20px 20px 20px 35px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.testimonial-container img {
+  width: 67px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+  left: -30px;
+  background-color: #fff;
+}
+.comment-head h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555;
+  margin: 0;
+}
+.comment-date {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+}
+.comment-date:hover {
+  text-decoration: none;
+}
+.comment-star {
+  position: absolute;
+  top: 17px;
+  color: #fec42d;
+  right: 30px;
+}
+a.reply-link {
+  position: absolute;
+  display: block;
+  top: 18px;
+  right: 4px;
+  color: #ccc;
+}
+a.reply-link:hover {
+  color: #5a5858;
+}
+.comment-content {
+  margin-left: 10px;
+}
+#comment2 img {
+  width: 50px;
+  left: -26px;
+}
+#comment2 {
+  width: 80%;
+  margin-left: 70px;
+}
+@media screen and (min-width: 768px) {
+  #comment2 {
+    margin-left: 137px;
+  }
 }
