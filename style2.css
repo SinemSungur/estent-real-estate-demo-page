@@ -1,10 +1,45 @@
-
 /*   SERVICES SUBPAGE   */
 .services-header {
-        background-image: url(images/Services-head.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
-        margin-top: -50px;
+  background-image: url(images/Services-head.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: -50px;
+}
+/* I BUILD 'FIRST SECTION BEFORE' just check  */
+
+/* + first section    */
+
+/*     SERVICES ARTICLE   */
+.services-section {
+  background-color: #fef6f3;
+  padding: 80px 20px;
+  text-align: center !important;
+}
+.services-section h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.services-section a {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.services-section a:hover {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #444;
+}
+
+@media screen and (min-width: 768px) {
+  .services-section h3 {
+    font-size: 24px;
+  }
 }
