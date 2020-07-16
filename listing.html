@@ -118,7 +118,7 @@
                 <a class="navlink" href="#">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="navlink" href="#">LISTING</a>
+                <a class="navlink" href="listing.html">LISTING</a>
               </li>
               <li class="nav-item">
                 <a class="navlink" href="#">CONTACT</a>
@@ -153,7 +153,7 @@
                 <a class="navlink" href="#">SERVICES</a>
               </li>
               <li class="navitem">
-                <a class="navlink" href="#">LISTING</a>
+                <a class="navlink" href="listing.html">LISTING</a>
               </li>
               <li class="navitem">
                 <a class="navlink" href="#">CONTACT</a>
@@ -330,12 +330,64 @@
     <!--       BUTTONS           -->
     <div class="container">
       <div class="listing-buttons">
-        <div class="left-side-buttons">
-          <a href="#"><i class="fas fa-list"></i> List</a>
-          <a href="#"><i class="fas fa-map-pin"></i> Map</a>
-        </div>
-        <div class="right-side-buttons">
-          <!-- dont forget to add dropdown menus!-->
+        <div class="row">
+          <div class="col-4">
+            <div class="left-side-buttons">
+              <a href="#"><i class="fas fa-list"></i> List</a>
+              <a href="#"><i class="fas fa-map-pin"></i> Map</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="right-side-buttons">
+              <div class="all-listing-items">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light dropdown-toggle"
+                    type="button"
+                    id="dropdownMenu2"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    All Listing
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">
+                      New Listing
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Home Opens
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-listed-items">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-light dropdown-toggle"
+                    type="button"
+                    id="dropdownMenu3"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Popular Listed
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">
+                      A-Z Listed
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Price: Lowest First
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Price: Highest First
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -730,11 +782,12 @@
         </div>
       </div>
     </section>
-    <!--     SECTION CONTENT              -->
+
+    <!--     LISTING ARTICLE (same as services.html service article)    -->
     <div class="container">
-      <div class="listing-section">
+      <div class="services-section" id="listing-article">
         <h3>Special Offers on Villa Long Term Rentals & Lease Agreements</h3>
-        <a href="#">CONTACT NOW</a>
+        <a href="#"> Contact Now</a>
       </div>
     </div>
     <!--             FOOTER PART                  -->
