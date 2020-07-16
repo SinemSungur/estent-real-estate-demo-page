@@ -1,9 +1,30 @@
-
-/*   SERVICES SUBPAGE   */
+/*   CONTACT SUBPAGE   */
 .contact-header {
-        background-image: url(images/Contact-header.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
+  background-image: url(images/Contact-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+/* CONTACT SUBPAGE ADRESS PART */
+.adress-part-img {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.contact-adress-container {
+  background-color: #2c3e50 !important;
+  padding: 60px;
+  color: #eee;
+}
+@media screen and (min-width: 992px) {
+  .contact-adress-container {
+    position: absolute;
+    top: -32px;
+    left: -95px;
+    z-index: 0;
+    padding: 60px 60px 60px 167px !important;
+  }
+  .adress-part-img {
+    position: relative;
+  }
 }
