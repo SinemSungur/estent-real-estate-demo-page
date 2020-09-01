@@ -1,9 +1,15 @@
 
-/*   SERVICES SUBPAGE   */
+/*   CONTACT SUBPAGE   */
 .contact-header {
         background-image: url(images/Contact-header.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 550px;
+}
+
+/*  MAP PART */
+.contact-map {
+        width: 100%;
+        height: 100vh;
 }
