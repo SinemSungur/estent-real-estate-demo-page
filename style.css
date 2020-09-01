@@ -417,21 +417,4 @@ li {
   a:hover {
     color: #eee !important;
   }
-  /*  FEATURED SECTION   */
-  .featured-icon {
-    top: 152px;
-  }
-  .featured-paragh {
-    top: 127px;
-  }
-  .fa-info {
-    bottom: 151px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /*  CONTACT PART */
-  iframe {
-    width: 1060px;
-  }
-}
+ 
