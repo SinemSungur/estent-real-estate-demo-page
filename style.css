@@ -82,7 +82,8 @@ ul.top-item-submenu {
   align-items: center;
   justify-content: center;
 }
-.dropdown-paragh {
+
+.top-bar-dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
@@ -98,9 +99,11 @@ ul.top-item-submenu {
 .top-bar-dropdown2 {
   position: relative;
 }
-.top-bar-dropdown2:hover .dropdown-paragh {
+.top-bar-dropdown2:hover .top-bar-dropdown-content {
   display: block;
 }
+
+
 li.top-link-item:not(:first-child) {
   border-left: 1px solid #66666641;
 }
@@ -296,6 +299,53 @@ form button:hover {
   color: #fff;
   cursor: pointer;
 }
+
+/*  TABS CONTENT SECTION(ref)   */
+
+.nav-item .nav-link {
+  color: #444 !important;
+}
+.tab-content {
+  margin-top: 20px;
+}
+.tab-content p {
+  color: #555;
+}
+.tab-content a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.tab-content h5 {
+  font-size: 40px;
+  color: #d2d2d2;
+}
+.tab-content .active:hover {
+  background-color: transparent !important;
+}
+.col-sm-12.col-md-3.p-lg-0.text-lg-left a {
+  border-bottom: none;
+}
+li {
+  list-style: none;
+}
+.tab-content .active:hover {
+  background-color: #55555521;
+  border-radius: 5px;
+}
+.client-grid img {
+  padding: 20px;
+}
+.tab-content address {
+  margin-bottom: 30px;
+}
+.properties-content .fa-check {
+  width: 14px;
+    margin-right: .5rem;
+    color: #555;
+}
+.properties-content span {
+  color: #555;
+}
 @media screen and (min-width: 768px) {
   /* TOP BAR */
   .col-sm-12.col-md-3.p-lg-0.text-lg-left a {
@@ -367,22 +417,4 @@ form button:hover {
   a:hover {
     color: #eee !important;
   }
-  /*  FEATURED SECTION   */
-  .featured-icon {
-    top: 188px;
-  }
-  .featured-paragh {
-    top: 162px;
-  }
-  .fa-info {
-    bottom: 151px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-/*  CONTACT PART */
-iframe {
-  width: 1060px;
-}
-
-}
+ 
