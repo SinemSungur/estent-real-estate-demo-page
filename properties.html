@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Estent Real Estate Demo Page</title>
+  </head>
+  <body>
+    <div class="properties-header">
+      <div class="properties-img-wrapper">
+        <div class="properties-img-wrapper-head">
+          <h2>Luxury Modern Condo Apartment /</h2>
+          <span>APARTMENTS</span>
+        </div>
+        <div class="properties-img-wrapper-gallery">
+          <a href="#">
+            <i class="far fa-image"></i>
+            <span>View Gallery</span>
+          </a>
+        </div>
+        <div class="properties-img-wrapper-gallery">
+          <a href="#">
+            <i class="fas fa-play"></i>
+            <span>Play Video</span>
+          </a>
+        </div>
+        <div class="properties-img-wrapper-price">
+          <h3>$120/day</h3>
+        </div>
+      </div>
+      <!--TOP BAR-->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-sm-12 col-md-3 p-lg-0 text-lg-left top-bar-dropdown-menu"
+            >
+              <a href="#">All Cities<i class="fas fa-chevron-down ml-2"></i></a>
+              <ul class="top-item-submenu">
+                <li>NEW YORK</li>
+                <li>LOS ANGELES</li>
+                <li>CALIFORNIA</li>
+                <li>MIAMI</li>
+                <li>LAS VEGAS</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-9 p-lg-0 text-lg-right">
+              <ul class="top-link-container">
+                <li class="top-link-item d-md-none d-lg-block">
+                  <a href="tel:+1800-123-7890"
+                    ><i class="fas fa-phone-alt mr-1"></i>+1800-123-7890</a
+                  >
+                </li>
+                <li class="top-link-item">
+                  <a href="#"
+                    ><i class="fas fa-download mr-1"></i> Download App</a
+                  >
+                </li>
+                <li class="top-link-item top-bar-dropdown2">
+                  <a href="#"
+                    >Sell/Rent Your Property<i
+                      class="fas fa-chevron-down ml-2"
+                    ></i
+                  ></a>
+                  <div class="dropdown-paragh-container">
+                    <p class="dropdown-paragh">
+                      Genuine Clients, 100% Trust Assurance and Lowest Fees on
+                      the Market.
+                      <a href="#"
+                        ><i>Learn More</i> <i class="fas fa-arrow-right"></i>
+                      </a>
+                    </p>
+                  </div>
+                </li>
+
+                <li class="top-link-item"><a href="#">Login/Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--NAVIGATION-->
+      <nav class="navbar navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            >estent <img src="images/icon-logo-house.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-content-lg">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="navlink" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink dropdown-content" href="#"
+                  >PROPERTIES<i class="fa fa-angle-right"></i
+                ></a>
+                <div class="nav-container-sublist">
+                  <ul>
+                    <li class="nav-container-list">CONDO APARTMENTS</li>
+                    <li class="nav-container-list">LUXURY VILLAS</li>
+                    <li class="nav-container-list">PREMIUM ESTATES</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">BUILDERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">LISTING</a>
+              </li>
+              <li class="nav-item">
+                <a class="navlink" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="navitem">
+                <a class="navlink" href="index.html">HOME</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="aboutus.html">ABOUT US</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="properties.html"
+                  >PROPERTIES<i class="fa fa-angle-right"></i
+                ></a>
+                <div class="nav-container-sublist">
+                  <ul>
+                    <li class="nav-container-list">CONDO APARTMENTS</li>
+                    <li class="nav-container-list">LUXURY VILLAS</li>
+                    <li class="nav-container-list">PREMIUM ESTATES</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">BUILDERS</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">SERVICES</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">LISTING</a>
+              </li>
+              <li class="navitem">
+                <a class="navlink" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--   BELOW HEADER PART     -->
+    <div class="below-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="images/Below-header-user.jpg" alt="" />
+            <span><b>P.Robert</b>/Host</span>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-key"></i>
+            <span><b>Rental Only</b></span>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-bed"></i>
+            <span><b>3 Bedrooms</b></span>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-ruler-combined"></i>
+            <span><b>1401 SqFt.</b></span>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-bath"></i>
+            <span><b>2 Bathrooms</b></span>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-parking"></i>
+            <span><b>Garage</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROPERTIES PAGE CONTENT -->
+    <div class="properties-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-9">
+            <p>
+              The interior of the house is focused around a large central
+              hallway serving as the main avenue of traffic and entrance area to
+              the adjacent rooms. The hallway flows into a large, wide staircase
+              that provides the main means of egress.
+              <br />
+              <br />
+              On the south side of the hall is the large front parlor. This room
+              contains original wallpaper including ceiling panels of small
+              birds and orange flowers with vibrant leaves of green and yellow
+              set upon a light blue background. The main body of the wallpaper
+              is shades.
+            </p>
+          </div>
+          <div class="col-12 col-lg-9">
+            <h6>Sepicification</h6>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Construction year: 2021
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Square Areas: 1401
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Living rooms: 12
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Bathrooms: 2
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Bedrooms: 3
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Balconies: 3
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Car Parking: 5
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Total Floors: 25
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Kitchens: 1
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Garages: 1
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Pools: 2
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Insurance: Yes
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Form -->
+          <div class="d-md-none d-lg-block col-lg-3">
+            <div class="reserve-form-container">
+              <h6>Reserve Now</h6>
+              <input
+                type="name"
+                id="rname"
+                name="name"
+                placeholder=" Full Name"
+              />
+              <input
+                type="email"
+                id="remail"
+                name="mail"
+                placeholder=" Email Address"
+              />
+              <input
+                type="number"
+                id="rnumber"
+                name="number"
+                placeholder=" Phone Number"
+              />
+              <textarea
+                name="message"
+                id="rtextarea"
+                placeholder=" Message"
+              ></textarea>
+              <a href="#" id="rsubmit">Book Now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <h6>Amenities</h6>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Parking/Garage
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Porter/Security
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Air Conditioning
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Washer
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Television
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Balcony/Terrace
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Fireplace
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Barbeque
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Ventilation
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Outdoor Shower
+                </p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Garden
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Rural/Secluded
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Microwave
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Intercom
+                </p>
+                <p>
+                  <i class="far fa-check-circle"></i>
+                  Parking
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--     MAP PART        -->
+          <div class="d-md-none d-lg-block col-lg-3">
+            <div class="properties-right-part">
+              <h5>MAP</h5>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6303.680214634128!2d144.955925!3d-37.817214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1str!2sin!4v1594235337678!5m2!1str!2sin"
+                  width="600"
+                  height="450"
+                  frameborder="0"
+                  style="border: 0;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9">
+          <p>
+            Put this magnificent property on the top of your list, oozing
+            quality from the moment you enter through the unique brick portico
+            into the Tuscan style courtyard with Mural and vertical garden..
+            *Floors of European oak and parquetry *Award winning kitchen with
+            limed solid American oak, bevelled glass cabinets, polished marble
+            bench tops and separate scullery *Bi folds doors open out to the sun
+            filled courtyard *Elegant lounge which also includes a drop down
+            screen for a home theatre *Guest bedroom or an ideal home office
+            Throughout this incredible residence you will find a vast array of
+            imported features. Doors and fittings from France, stained glass
+            windows from Europe. Wine cellar under the staircase. Upper level:
+            Elegant master bedroom with balcony, ensuite with Emperador Scuro
+            marble bench tops, mirrors with bevelled glass and American cherry
+            frames. A most spacious dressing room...every woman's dream! Many
+            fixtures have been especially commissioned, including the stand
+            alone bath in the second bathroom, light switches and power points,
+            door hardware is all imported from France. Even the grandchildren
+            are catered for with their own space built into the roof area. An
+            ideal cubby! The home has another two bedrooms with built in robes.
+            *Quality fixtures and fittings *Reverse cycle air conditioning
+            *Security alarm and intercom Designed by Award winner Peter Fryer
+            this landmark Centro residence will impress and delight...a viewing
+            is a must! Contact Susan Taylor on 0417 771 112 or Trevor Neil 0438
+            354 556 your private viewing.
+          </p>
+        </div>
+        <div class="d-md-none d-lg-block col-lg-3">
+          <div class="properties-right-part">
+            <h5>VIDEO</h5>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/GU58qaKmZhQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="properties-right-part">
+            <h5>SHARE</h5>
+            <div class="footer-social" style="margin-bottom: 32px;">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-apple"></i></a>
+              <a href="#"><i class="fab fa-google-play"></i></a>
+              <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--        TESTIMONIALS         -->
+    <div class="container">
+      <div class="testimonials">
+        <h4>Reviews</h4>
+        <div class="testimonial-container">
+          <img src="images/Below-header-user.jpg" alt="" />
+          <div class="comment-head">
+            <h6>Max Conversion</h6>
+            <a href="#" class="reply-link"><i class="fas fa-reply"></i></a>
+            <div class="comment-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="comment-date">October 31, 2021 at 1:10 am</a>
+          </div>
+          <p>
+            Canvas is an extremely beautiful and well coded and robust template.
+            I can pretty much customize to meet any of my needs as a designer.
+            Thank you guys so much for doing this. Please keep adding more
+            stunning themes and animations. You're making the web a much more
+            beautiful place.
+          </p>
+        </div>
+        <div class="testimonial-container">
+          <img src="images/Below-header-user.jpg" alt="" />
+          <div class="comment-head">
+            <h6>P. Robert</h6>
+            <a href="#" class="reply-link"><i class="fas fa-reply"></i></a>
+            <a href="#" class="comment-date">October 31, 2021 at 1:16 am</a>
+          </div>
+          <p>Thank You so much. I am really glad that you like our template.</p>
+        </div>
+        <div class="testimonial-container">
+          <img src="images/Below-header-user.jpg" alt="" />
+          <div class="comment-head">
+            <h6>Hilary Ouse</h6>
+            <a href="#" class="reply-link"><i class="fas fa-reply"></i></a>
+            <div class="comment-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="comment-date">June 21, 2021 at 1:03 am</a>
+          </div>
+          <p>
+            I don't think I'll be using any other templates from now on. It's
+            perfect. Great, fast responsive support. Super flexible, easy to
+            customize. One warning. If you don't know any code it's not for you.
+            If you know your code then this is SOOO good :) Thank you SemiColon
+            team. Most excellent job.
+          </p>
+        </div>
+        <div class="testimonial-container">
+          <img src="images/Below-header-user.jpg" alt="" />
+          <div class="comment-head">
+            <h6>AL3XL</h6>
+            <a href="#" class="reply-link"><i class="fas fa-reply"></i></a>
+            <div class="comment-star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <a href="#" class="comment-date">April 25, 2021 at 1:03 am</a>
+          </div>
+          <p>
+            Awesome quality, highly structured. The detailed documentation is
+            included, but it is all clear from just looking into the code. Comes
+            with free updates. There is an invite--only support forum for
+            customers. This purchase makes perfect sense to save you an immense
+            amount of time. Thank you.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--FEATURED SECTION-->
+    <section>
+      <div class="container">
+        <div class="featured-head">
+          <h2>Similar Properties</h2>
+          <a href="#">CHECK ALL</a>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <a href="#"
+              ><img
+                src="images/FP-1.jpg"
+                class="featured-item-img img-fluid"
+                alt=""
+            /></a>
+            <a href="#" class="featured-button">FOR SALE</a>
+            <div class="featured-paragh">
+              <p>$1.2m</p>
+              <span>Leasehold</span>
+            </div>
+            <div class="featured-icon">
+              <a href="#"><i class="far fa-clone"></i></a>
+              <a href="#"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="below-featured-img">
+              <div class="below-featured-img-paragh">
+                <h4>3 Bedroom Villa</h4>
+                <p>Seminyak Area</p>
+              </div>
+              <i class="fas fa-info"></i>
+              <div class="row pt-3">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">Beds: 3</div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">Baths: 3</div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                  Area: 150sqm
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                  Pool:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-4">
+                  Internet:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-4">
+                  Cleaning:
+                  <i class="fas fa-minus-square text-danger ml-1 pt-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--         2. CONTENT                  -->
+          <div class=".d-sm-none d-md-block col-md-6 col-lg-4 mb-4">
+            <a href="#"
+              ><img
+                src="images/FP-2.jpg"
+                class="featured-item-img img-fluid"
+                alt=""
+            /></a>
+            <a href="#" class="featured-button">HOT DEAL</a>
+            <div class="featured-paragh">
+              <p>$200,000</p>
+              <span>bi-annually</span>
+            </div>
+            <div class="featured-icon">
+              <a href="#"><i class="far fa-clone"></i></a>
+              <a href="#"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="below-featured-img">
+              <div class="below-featured-img-paragh">
+                <h4>3 Bedroom Villa</h4>
+                <p>Seminyak Area</p>
+              </div>
+              <i class="fas fa-info"></i>
+              <div class="row pt-3">
+                <div class="col-md-6 col-lg-4">Beds: 3</div>
+                <div class="col-md-6 col-lg-4">Baths: 3</div>
+                <div class="col-md-6 col-lg-4">Area: 150sqm</div>
+                <div class="col-md-6 col-lg-4">
+                  Pool:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  Internet:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  Cleaning:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--         3. CONTENT                  -->
+          <div class="d-sm-none d-md-none d-lg-block col-lg-4 mb-4">
+            <a href="#"
+              ><img
+                src="images/FP-3.jpg"
+                class="featured-item-img img-fluid"
+                alt=""
+            /></a>
+            <a href="#" class="featured-button">LONG TERM RENTAL</a>
+            <div class="featured-paragh">
+              <p>$1600</p>
+              <span>per month</span>
+            </div>
+            <div class="featured-icon">
+              <a href="#"><i class="far fa-clone"></i></a>
+              <a href="#"><i class="far fa-heart"></i></a>
+            </div>
+            <div class="below-featured-img">
+              <div class="below-featured-img-paragh">
+                <h4>3 Bedroom Villa</h4>
+                <p>Seminyak Area</p>
+              </div>
+              <i class="fas fa-info"></i>
+              <div class="row pt-3">
+                <div class="col-md-6 col-lg-4">Beds: 3</div>
+                <div class="col-md-6 col-lg-4">Baths: 3</div>
+                <div class="col-md-6 col-lg-4">Area: 150sqm</div>
+                <div class="col-md-6 col-lg-4">
+                  Pool:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  Internet:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  Cleaning:
+                  <i class="fas fa-check-square text-success ml-1 pt-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--             FOOTER PART                  -->
+    <footer>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+            <h4 class="text-uppercase">Popular Locations</h4>
+            <div class="row">
+              <div class="col-6 mb-4">
+                <ul>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">California</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Nevada</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Hawaii</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Washington</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Ottawa</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Virginia</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Ohio</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 mb-4">
+                <ul>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Oregon</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Colorado</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">Kentucky</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Texas</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><a href="#">Miami</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">New York</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i
+                    ><a href="#">New Jersey</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <h4 class="text-uppercase" style="margin-bottom: 30px;">
+              Connect Socially
+            </h4>
+            <div class="footer-social" style="margin-bottom: 32px;">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-apple"></i></a>
+              <a href="#"><i class="fab fa-google-play"></i></a>
+              <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+            <div class="footer-social-button">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+              </div>
+              <a href="#">SUBSCRIBE</a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-5 order-lg-first pb-5">
+            <img src="images/icon-logo-house.svg" alt="" />
+
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.75);
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+              "
+            >
+              We believe in <b>Simple, Creative, Flexible</b> Design Standards
+              with a Retina & Responsive Approach. Browse the amazing Features
+              this template offers.
+            </p>
+            <p style="color: rgba(255, 255, 255, 0.75);">
+              Copyrights © 2020 Sinem Sungur
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
