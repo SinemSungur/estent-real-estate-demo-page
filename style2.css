@@ -1,0 +1,9 @@
+
+/*   SERVICES SUBPAGE   */
+.contact-header {
+        background-image: url(images/Contact-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+}
