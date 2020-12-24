@@ -1,0 +1,46 @@
+/*   PROPERTIES SUBPAGE   */
+
+.properties-header {
+  background-image: url(images/Properties-header.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  margin-top: -10px;
+  padding-bottom: 3rem;
+}
+/* BELOW HEADER PART */
+.below-header {
+  background-color: #f9f9f9;
+  margin-bottom: 60px;
+  padding: 40px 0;
+  align-self: center;
+  text-align: center;
+}
+.below-header img {
+  border-radius: 50%;
+  width: 35%;
+}
+.below-header i {
+  color: #adadadd4;
+  font-size: 56px;
+  text-align: center;
+}
+.below-header span {
+  display: block;
+  color: #444;
+  font-size: 14px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+        .below-header img {
+                width: 70%;
+              }   
+}
+@media screen and (max-width: 991px) {
+        .below-header img {
+                width: 20%;
+              }  
+
+}
